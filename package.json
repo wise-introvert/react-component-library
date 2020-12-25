@@ -5,7 +5,9 @@
   "module": "dist/index.es.js",
   "jsnext:module": "dist/index.es.js",
   "types": "dist/index.d.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Fardeen Panjwani",
   "license": "MIT",
   "scripts": {
