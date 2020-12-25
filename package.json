@@ -5,9 +5,7 @@
   "module": "dist/index.es.js",
   "jsnext:module": "dist/index.es.js",
   "types": "dist/index.d.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "author": "Fardeen Panjwani",
   "license": "MIT",
   "scripts": {
@@ -17,6 +15,8 @@
     "start": "rollup -cw"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
@@ -28,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.6",
     "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
     "rollup": "^2.35.1",
@@ -42,6 +43,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
