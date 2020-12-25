@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "strict": true,
+    "lib": ["es5", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "target": "es5"
+  },
+  "include": ["src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
