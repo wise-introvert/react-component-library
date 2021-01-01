@@ -5,13 +5,13 @@
   "module": "dist/index.es.js",
   "jsnext:module": "dist/index.es.js",
   "types": "dist/index.d.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "author": "Fardeen Panjwani",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist; mkdirp dist;",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "prebuild": "yarn clean",
     "build": "rollup -c",
     "start": "rollup -cw",
@@ -20,6 +20,9 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.2",
+    "@types/jest": "^26.0.19",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
@@ -34,15 +37,18 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "mkdirp": "^1.0.4",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.35.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.29.0",
+    "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
   },
-  "peerDependencies": {
+  "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
