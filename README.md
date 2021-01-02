@@ -40,6 +40,7 @@
 - Simply clone this repo and start coding!
 
 ## Commands
+
 - `yarn build`
   <p>Compile the code using RollupJS</p>
 - `yarn test`
@@ -50,6 +51,44 @@
   <p>Lint using ESLint</p>
 - `yarn clean`
   <p>Cleans `dist` directory and replaces it with an empty folder (used by build script)</p>
+
+## Enable automatic semantic versioning (Optional)
+
+- [x] Only allow squash merging of pull requests
+- [x] Install https://github.com/apps/semantic-pull-requests
+- [x] Create npm token using `npm token create` or https://www.npmjs.com/settings
+- [x] Add token to repo secrets as `NPM_TOKEN`
+- [x] Add release workflow file to `.github/workflows/release.yml`
+
+  ```yml
+  name: Release npm package
+
+  on:
+    push:
+      branches:
+        - master
+
+  jobs:
+    release:
+      name: Release
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@master
+        - uses: actions/setup-node@v1
+          with:
+            node-version: "12.x"
+        - run: npm ci
+        - run: npm run build --if-present
+        - run: npm test
+        - run: npx semantic-release
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  ```
+
+- [x] Set `version` to `0.0.0-development` in package.json
+- [x] Install `semantic-release` as a dev dependency: `yarn -D semantic-release`
+> Watch Zeke Sikelianos's demo at https://www.youtube.com/watch?v=rCXq86FOlzQ for a more detailed explanination
 
 ## Author
 
