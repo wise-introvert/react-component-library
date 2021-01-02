@@ -35,6 +35,22 @@
 - [Commitlint](https://commitlint.js.org)
 - [Storybook](https://storybook.js.org/)
 
+## Instructions
+
+- Simply clone this repo and start coding!
+
+## Commands
+- `yarn build`
+  <p>Compile the code using RollupJS</p>
+- `yarn test`
+  <p>Test the code using react-testing-library and Jest</p>
+- `yarn storybook`
+  <p>Preview your components using StorybookJS</p>
+- `yarn lint`
+  <p>Lint using ESLint</p>
+- `yarn clean`
+  <p>Cleans `dist` directory and replaces it with an empty folder (used by build script)</p>
+
 ## Author
 
 👤 **Wise Introvert**
