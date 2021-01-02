@@ -1,6 +1,6 @@
 {
   "name": "alpha",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:module": "dist/index.es.js",
@@ -55,6 +55,7 @@
     "rollup": "^2.35.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.29.0",
+    "semantic-release": "^17.3.1",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
   },
