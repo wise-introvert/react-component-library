@@ -5,7 +5,9 @@
   "module": "dist/index.es.js",
   "jsnext:module": "dist/index.es.js",
   "types": "dist/index.d.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Fardeen Panjwani",
   "license": "MIT",
   "scripts": {
@@ -15,11 +17,18 @@
     "prebuild": "yarn clean",
     "build": "rollup -c",
     "start": "rollup -cw",
-    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@types/jest": "^26.0.19",
@@ -27,8 +36,9 @@
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.11.1",
+    "babel-loader": "^8.2.2",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
