@@ -77,9 +77,9 @@
         - uses: actions/setup-node@v1
           with:
             node-version: "12.x"
-        - run: npm ci
-        - run: npm run build --if-present
-        - run: npm test
+        - run: yarn install --frozen-lockfile
+        - run: yarn build --if-present
+        - run: yarn test
         - run: npx semantic-release
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
