@@ -1,4 +1,4 @@
-<div align="center"><img src="https://www.flaticon.com/svg/static/icons/svg/54/54776.svg" width="200"/></div>
+<div align="center"><img src="https://github.com/wise-introvert/react-component-library/blob/master/assets/logo.png?raw=true" width="200"/></div>
 <h1 align="center">react-component-library</h1>
 <p>
   <a href="https://www.github.com/wise-introvert/react-component-library.git#README.md" target="_blank">
