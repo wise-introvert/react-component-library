@@ -16,7 +16,7 @@
 
 ## Technologies used
 
-<div align="center" style="display: grid; grid-template-columns: repeat(7, 55px); justify-content: center; align-items: center; grid-gap: 1em;">
+<div style="display: grid; grid-template-columns: repeat(7, 55px); justify-content: center; align-items: center; grid-gap: 1em;">
   <a href="https://eslint.org"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/eslint.svg"/></a>
   <a href="https://jestjs.io"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/jest.svg"/></a>
   <a href="https://prettier.io"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/prettier.svg"/></a>
@@ -24,6 +24,7 @@
   <a href="https://rollupjs.org"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/rollup.svg"/></a>
   <a href="https://www.typescriptlang.org/"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/typescript-icon.svg"/></a>
   <a href="https://storybook.js.org"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/storybook-icon.svg"/></a>
+  <a href="https://sass-lang.com"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/sass.svg"/></a>
 </div>
 
 - [RollupJS](https://rollupjs.org)
@@ -34,6 +35,7 @@
 - [Commitizen](http://commitizen.github.io/cz-cli/)
 - [Commitlint](https://commitlint.js.org)
 - [Storybook](https://storybook.js.org/)
+- [SASS](https://sass-lang.com)
 
 ## Instructions
 
@@ -88,7 +90,7 @@
 
 - [x] Set `version` to `0.0.0-development` in package.json
 - [x] Install `semantic-release` as a dev dependency: `yarn -D semantic-release`
-> Watch Zeke Sikelianos's demo at https://www.youtube.com/watch?v=rCXq86FOlzQ for a more detailed explanination
+  > Watch Zeke Sikelianos's demo at https://www.youtube.com/watch?v=rCXq86FOlzQ for a more detailed explanination
 
 ## Author
 
