@@ -1,0 +1,37 @@
+$dark: #33332d;
+$light: #ffffff;
+$transition: 100ms;
+
+.button {
+  padding: 0.6rem 1rem;
+  width: 220px;
+  height: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding: 0.6rem 1rem;
+  outline: none;
+  border-radius: 0.2em;
+  transition: $transition;
+  background: transparent;
+}
+
+.dark {
+  box-shadow: -3px 5px $dark;
+  color: $dark;
+  border: 2px solid $dark;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.light {
+  box-shadow: -3px 5px $light;
+  color: $light;
+  border: 2px solid $light;
+
+  &:active {
+    box-shadow: none;
+  }
+}

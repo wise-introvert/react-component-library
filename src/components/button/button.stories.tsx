@@ -1,12 +1,34 @@
 import * as React from "react";
-import { Meta } from "@storybook/react/types-6-0";
+import { Story } from "@storybook/react/types-6-0";
 import { action } from "@storybook/addon-actions";
 
-import { Button } from ".";
+import { Button, ButtonProps } from ".";
 
 export default {
-  title: "Components/Button",
+  title: "Button",
   component: Button,
-} as Meta;
+};
 
-export const Default = (): React.ReactNode => <Button onClick={action("button-click")}>Hello</Button>;
+const Template: Story<ButtonProps> = (args) => <Button {...args}>Button</Button>;
+
+export const Dark = Template.bind({});
+Dark.args = {
+  dark: true,
+  onClick: action("clicked"),
+};
+Dark.story = {
+  parameters: {
+    backgrounds: { default: "light" },
+  },
+};
+
+export const Light = Template.bind({});
+Light.args = {
+  dark: false,
+  onClick: action("clicked"),
+};
+Light.story = {
+  parameters: {
+    backgrounds: { default: "dark" },
+  },
+};
